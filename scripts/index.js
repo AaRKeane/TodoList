@@ -1,4 +1,3 @@
-
 const userInput = document.getElementById("todoContent");
 const container = document.querySelector(".list-container");
 const ul = document.getElementById("todoList");
@@ -51,10 +50,9 @@ function displayList(myTodo) {
   deleteIcon.addEventListener("click", () => {
     li.remove();
     todos = todos.filter((t) => t !== myTodo);
-    console.log("Current todos array:", todos);
   });
   li.appendChild(checkIcon);
-    li.appendChild(text);
+  li.appendChild(text);
   li.appendChild(deleteIcon);
 
   ul.append(li);

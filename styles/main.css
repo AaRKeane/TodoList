@@ -3,13 +3,12 @@
   padding: 0;
   box-sizing: border-box;
   font-family: sans-serif;
-
 }
 .container {
   width: 100%;
   min-height: 100vh;
   background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-    padding: 10px;
+  padding: 10px;
 }
 
 .container-todo {
@@ -107,7 +106,7 @@ ul li:hover {
 }
 
 .check-icon {
-  color:green;
+  color: green;
   font-size: 1.2em;
   width: 1.2em;
   height: 1.2em;
@@ -162,11 +161,11 @@ ul li:hover {
   font-weight: 600;
 }
 
-.filters-stats{
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: center;
+.filters-stats {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
 }
 
 @media (max-width: 768px) {
