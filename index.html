@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-compatible" content="ie=edge" />
+    <link rel="stylesheet" href="styles/main.css" />
+    <title>To-Do List</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-todo">
+        <div class="header-bar">
+          <div class="title-group">
+            <h2>MY TO DO LIST</h2>
+            <img src="assets/checklist.png" />
+          </div>
+          <div class="input-row">
+            <input type="text" id="todoContent" name="title" placeholder="Enter To Do Here" autocomplete="off" />
+            <button onclick="createTodo()" class="addBtn">Add</button> 
+          </div>
+          <label id="errorLabel" hidden style="color: red; margin-left: 10px;">You Must Type Something*</label>
+        </div>
+        <div class="filter-stats">
+            <div class="list-stats"></div>
+        </div>
+        <div class="list-container">
+            <ul id="todoList"></ul>
+        </div>
+        <hr style="margin-top: 20px">
+
+        <span class="clearBtn" onclick="clearStorage()" style="margin-top: 25px;">Clean List</span>
+      </div>
+    </div>
+    <script src="scripts/index.js"></script>
+  </body>
+</html>
