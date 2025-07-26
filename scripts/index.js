@@ -101,7 +101,7 @@ $(document).ready(function () {
   function deleteTodo(id) {
     $.ajax({
       type: "POST",
-      url: "includes/deleteOneTodo-inc.php",
+      url: "includes/deactivateOneTodo-inc.php",
       data: { taskID: id },
       success: function () {
         fetchTodos();
