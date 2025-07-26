@@ -58,6 +58,7 @@ input {
   font-size: 18px;
 }
 
+
 .addBtn {
   cursor: pointer;
   border: none;
@@ -76,8 +77,13 @@ input {
   background-color: rgb(22, 219, 137);
 }
 
+.addBtn:active {
+  transform: scale(0.98);
+}
+
+
 .list-container {
-  margin: 12px 12x 12px 12px;
+  margin: 12px 12px 12px 12px;
   max-height: 50vh;
   overflow-y: auto;
 }
@@ -118,6 +124,7 @@ ul li:hover {
 
 .todo-text {
   flex-grow: 1;
+  font-size: 15px;
   line-height: 1.4;
   word-wrap: break-word;
 }
@@ -139,7 +146,7 @@ ul li:hover {
   padding: 8px;
   margin-left: auto;
   flex-shrink: 0;
-  transition: background-color 0.2s ease;
+  transition: all 0.2s ease-in-out;
 }
 
 .delete-icon:hover {
@@ -161,12 +168,10 @@ ul li:hover {
   font-weight: 600;
 }
 
-.filters-stats {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: center;
+.clearBtn:hover {
+  background-color: darkred;
 }
+
 
 @media (max-width: 768px) {
   ul li {
